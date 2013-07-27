@@ -23,3 +23,5 @@ EOF
 else
   $emacsclient -a emacs $@ &
 fi
+
+[[ -e `which wmctrl` ]]  && wmctrl -a emacs
